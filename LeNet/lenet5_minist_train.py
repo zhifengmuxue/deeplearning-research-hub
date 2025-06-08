@@ -6,7 +6,7 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from tools.train import run_training
+from tools.train_utils import run_training
 
 def get_dataloaders(dataset_name, batch_size=64):
     transform = transforms.Compose([
