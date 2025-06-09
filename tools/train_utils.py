@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 import os
 import datetime
 
+# 训练一个epoch
 def train_one_epoch(model, dataloader, optimizer, criterion, device, epoch, log_interval=100):
     model.train()
     running_loss = 0.0
@@ -24,6 +24,7 @@ def train_one_epoch(model, dataloader, optimizer, criterion, device, epoch, log_
     avg_loss = running_loss / len(dataloader)
     return avg_loss
 
+# 评估模型性能
 def evaluate(model, dataloader, device):
     model.eval()
     correct = 0
@@ -37,6 +38,7 @@ def evaluate(model, dataloader, device):
             correct += (predicted == labels).sum().item()
     return 100 * correct / total
 
+# 绘制训练损失和测试准确率
 def plot_metrics(losses, accuracies, output_dir):
     epochs = range(1, len(losses) + 1)
     plt.figure(figsize=(12, 5))
@@ -62,6 +64,7 @@ def plot_metrics(losses, accuracies, output_dir):
     print(f"Training metrics plot saved to: {save_path}")
     plt.show()
 
+# 开始训练
 def run_training(
     model_class,
     get_dataloaders_fn,
@@ -74,6 +77,7 @@ def run_training(
     enable_plot=True,
     device=None
 ):
+    # 使用mac m系列芯片
     device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 

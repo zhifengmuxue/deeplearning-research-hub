@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torchinfo import summary as torchinfo_summary
 
 # LeNet-5 architecture
 # Reference: https://en.wikipedia.org/wiki/LeNet
@@ -10,7 +11,8 @@ class LeNet5(nn.Module):
     def __init__(self, input_shape=(1, 32, 32)):
         super(LeNet5, self).__init__()
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=6, kernel_size=5, stride=1, padding=0)
-        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)  # 原文是降采样，这里用max pooling代替
+        # 原文这两层中间使用了稀疏连接，现在这种方式已经废弃，这里没有复现
         self.conv3 = nn.Conv2d(in_channels=6, out_channels=16, kernel_size=5, stride=1, padding=0)
         self.pool4 = nn.MaxPool2d(kernel_size=2, stride=2)
         self.flatten5 = nn.Flatten()
@@ -37,4 +39,16 @@ class LeNet5(nn.Module):
         x = self.fc8(x)     # pytorch 会自动使用softmax作为最后一层的激活函数
         return x
     
+    # 使用torchinfo来打印模型的结构和参数信息
+    def summary(self, batch_size=1, input_shape=(1, 32, 32)):
+        return torchinfo_summary(
+            self, 
+            input_size=(batch_size,) + input_shape,  # 添加批量大小
+            depth=5, 
+            col_names=["input_size", "output_size", "num_params", "kernel_size"]
+        )
+    
+if __name__ == "__main__":
+    model = LeNet5(input_shape=(1, 32, 32))
+    print(model.summary())
 
