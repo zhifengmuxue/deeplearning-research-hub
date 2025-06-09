@@ -50,6 +50,8 @@ class LeNet5(nn.Module):
             depth=5,
             col_names=["input_size", "output_size", "num_params", "kernel_size"]
         )
+    
+
 
     
 if __name__ == "__main__":

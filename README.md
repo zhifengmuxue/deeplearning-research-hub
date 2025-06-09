@@ -34,8 +34,8 @@ deeplearning-research-hub/
 
 | Model   | Dataset | Status | Predict|
 | ------- | ------- | ------ | ------ |
-| LeNet-5 | MNIST   | ✅ Done | ------ |
-| AlexNet | MNIST   | ✅ Done | ------ |
+| LeNet-5 | MNIST   | ✅ Done | ✅ Done |
+| AlexNet | MNIST   | ✅ Done | ✅ Done |
 
 > ✅ More coming soon: ResNet, CIFAR10, FashionMNIST...
 
