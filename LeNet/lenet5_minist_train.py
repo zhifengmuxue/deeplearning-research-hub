@@ -16,8 +16,8 @@ def get_dataloaders(dataset_name, batch_size=64):
     ])
 
     if dataset_name.lower() == "mnist":
-        train_set = datasets.MNIST(root="../dataset", train=True, download=True, transform=transform)
-        test_set = datasets.MNIST(root="../dataset", train=False, download=True, transform=transform)
+        train_set = datasets.MNIST(root="./dataset", train=True, download=True, transform=transform)
+        test_set = datasets.MNIST(root="./dataset", train=False, download=True, transform=transform)
     else:
         raise ValueError(f"Unsupported dataset: {dataset_name}")
 
@@ -31,7 +31,7 @@ run_training(
     get_dataloaders_fn=get_dataloaders,
     dataset_name="MNIST",
     input_shape=(1, 32, 32),
-    num_epochs=1,
+    num_epochs=5,
     output_dir="LeNet/outputs",
     enable_plot=True,
 )

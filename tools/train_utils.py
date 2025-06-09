@@ -78,7 +78,14 @@ def run_training(
     device=None
 ):
     # 使用mac m系列芯片
-    device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if torch.backends.mps.is_available():
+        device = torch.device("mps")
+    # 使用cuda
+    elif torch.cuda.is_available():
+        device = torch.device("cuda")
+    else:
+        device = torch.device("cpu")
+
     print(f"Using device: {device}")
 
     model = model_class(input_shape=input_shape).to(device)
