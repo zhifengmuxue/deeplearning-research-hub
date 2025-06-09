@@ -10,9 +10,8 @@ from tools.train_utils import run_training
 
 def get_dataloaders(dataset_name, batch_size=64):
     transform = transforms.Compose([
-        transforms.Resize((32, 32)),
-        transforms.ToTensor(),
-        transforms.Normalize((0.1307,), (0.3081,))
+        transforms.Resize((28, 28)),
+        transforms.ToTensor()
     ])
 
     if dataset_name.lower() == "mnist":
@@ -30,7 +29,7 @@ run_training(
     model_class=LeNet5,
     get_dataloaders_fn=get_dataloaders,
     dataset_name="MNIST",
-    input_shape=(1, 32, 32),
+    input_shape=(1, 28, 28),
     num_epochs=5,
     output_dir="LeNet/outputs",
     enable_plot=True,

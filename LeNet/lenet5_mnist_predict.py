@@ -13,9 +13,8 @@ from tools.predict_utils import predict_single_image
 
 # 定义transform（要与训练时一致）
 transform = transforms.Compose([
-    transforms.Resize((32, 32)),  # LeNet5 输入尺寸
-    transforms.ToTensor(),
-    transforms.Normalize((0.1307,), (0.3081,))
+    transforms.Resize((28, 28)),  # LeNet5 输入尺寸
+    transforms.ToTensor()
 ])
 
 # 加载MNIST测试集
@@ -30,15 +29,14 @@ img_tensor, label = test_dataset[random_idx]
 # 打印选择的索引，便于后续验证
 print(f"随机选择的样本索引: {random_idx}")
 
-# 显示图像（去归一化）
-img_to_show = img_tensor * 0.3081 + 0.1307  # 反归一化
-plt.imshow(img_to_show.squeeze(0), cmap='gray')  # squeeze 去掉 batch 维
+# 显示图像
+plt.imshow(img_tensor.squeeze(0), cmap='gray')  # squeeze 去掉 batch 维
 plt.title(f"True Label: {label}")
 plt.axis("off")
 plt.show()
 
 # 初始化模型
-model = LeNet5(input_shape=(1, 32, 32))
+model = LeNet5(input_shape=(1, 28, 28))
 
 # 权重路径
 current_dir = os.path.dirname(os.path.abspath(__file__))

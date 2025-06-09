@@ -9,10 +9,11 @@ deeplearning-research-hub/
 ├── LeNet/                     # LeNet5 architecture and training script for MNIST
 │   ├── lenet5.py
 │   ├── lenet5_minist_train.py
+|   ├── lenet5_minist_predict.py
+|   └── ... other dataset
+├── ... other network
 ├── tools/                    # Generic training & evaluation utilities
 │   └── train_utils.py
-├── dataset/                  # (Optional) custom dataset logic
-│   └── __init__.py
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # You're reading this!
 └── train.py (optional)       # Central training entry point
@@ -35,7 +36,9 @@ deeplearning-research-hub/
 | Model   | Dataset | Status | Predict|
 | ------- | ------- | ------ | ------ |
 | LeNet-5 | MNIST   | ✅ Done | ✅ Done |
+| LeNet-5 | FashionMNIST   | ✅ Done | ✅ Done |
 | AlexNet | MNIST   | ✅ Done | ✅ Done |
+| AlexNet | FashionMNIST   | ✅ Done | ✅ Done |
 
 > ✅ More coming soon: ResNet, CIFAR10, FashionMNIST...
 
