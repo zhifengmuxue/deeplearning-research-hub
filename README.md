@@ -51,13 +51,17 @@ deeplearning-research-hub/
 
 ### 📊 Paper Original Datasets
 
-| Model   | Dataset | Compatibility | Status | Notes |
-| ------- | ------- | ------------ | ------ | ----- |
-| LeNet-5 | MNIST   | ⭐⭐⭐ Excellent | ✅ Done | 论文原始使用的手写数字数据集 |
-| AlexNet | ILSVRC-2010 | ⭐⭐⭐ Excellent | 🚧 In Progress | 原始ImageNet竞赛数据集 |
-| AlexNet | ImageNet | ⭐⭐⭐ Excellent | 🔄 Untested | 完整ImageNet数据集 |
-| VGG-16  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中表现最佳的VGG变体 |
-| VGG-19  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中最深的VGG变体 |
+| Model   | Dataset  | Status | Notes |
+| ------- | ------- | ------ | ----- |
+| LeNet-5 | MNIST    | ✅ Done | 论文原始使用的手写数字数据集 |
+| AlexNet | ILSVRC-2010(ImageNet) | 🔄 Untested | 原始ImageNet竞赛数据集 |
+| VGG  | ILSVRC-2012(ImageNet) | 🚧 In Progress | 论文中表现最佳的VGG变体 |
+｜ VGG | PASCAL VOC 2007 | 🚧 In Progress | 论文中用于目标检测的基准数据集，包含20个类别 |
+｜ VGG | PASCAL VOC 2012 | 🚧 In Progress | VOC挑战赛的扩展版本，样本数量更多，标注更精确 |
+｜ VGG | Caltech-101 | 🚧 In Progress | 早期图像分类数据集，包含101个类别，每类约40-800张图像 |
+｜ VGG | Caltech-256  | 🚧 In Progress | Caltech-101的扩展版本，包含256个类别，每类至少80张图像 |
+
+
 
 *Note: ILSVRC (ImageNet Large Scale Visual Recognition Challenge) is an annual competition that uses a subset of the full ImageNet database. Different years (ILSVRC-2010, ILSVRC-2012, etc.) may use slightly different configurations of the dataset.
 
