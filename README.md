@@ -40,7 +40,7 @@ deeplearning-research-hub/
 | ------------------- | ---- | ---------------- | -------------------- | ----- |
 | LeNet-5 | 1998 | Handwritten digit recognition | ✅ Complete | 经典CNN架构，为现代卷积网络奠定基础 |
 | AlexNet | 2012 | ImageNet classification | ✅ Complete | 首个深度CNN赢得ImageNet竞赛，引发深度学习革命 |
-| VGG (A/B/C/D/E) | 2014 | ImageNet classification | 🚧 In Progress | 以简洁的架构和3x3卷积堆叠著称 |
+| VGG (A/B/C/D/E) | 2014 | ImageNet classification | ✅ Complete | 以简洁的架构和3x3卷积堆叠著称 |
 | GoogleNet/Inception | 2014 | ImageNet classification | ❌ Planned | 引入inception模块，减少参数量 |
 | ResNet | 2015 | ImageNet classification | ❌ Planned | 解决深层网络的梯度消失问题，引入残差连接 |
 | MobileNet | 2017 | Mobile vision applications | ❌ Planned | 轻量级网络，适用于移动设备 |
@@ -54,10 +54,12 @@ deeplearning-research-hub/
 | Model   | Dataset | Compatibility | Status | Notes |
 | ------- | ------- | ------------ | ------ | ----- |
 | LeNet-5 | MNIST   | ⭐⭐⭐ Excellent | ✅ Done | 论文原始使用的手写数字数据集 |
-| AlexNet | ILSVRC-2010 | ⭐⭐⭐ Excellent | 🚧 Planned | 原始ImageNet竞赛数据集 |
+| AlexNet | ILSVRC-2010 | ⭐⭐⭐ Excellent | 🚧 In Progress | 原始ImageNet竞赛数据集 |
 | AlexNet | ImageNet | ⭐⭐⭐ Excellent | 🔄 Untested | 完整ImageNet数据集 |
 | VGG-16  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中表现最佳的VGG变体 |
 | VGG-19  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中最深的VGG变体 |
+
+*Note: ILSVRC (ImageNet Large Scale Visual Recognition Challenge) is an annual competition that uses a subset of the full ImageNet database. Different years (ILSVRC-2010, ILSVRC-2012, etc.) may use slightly different configurations of the dataset.
 
 ### 🔬 Additional Test Datasets
 
@@ -74,6 +76,44 @@ deeplearning-research-hub/
 
 
 ps: Some datasets are too large to test on my own computer...
+---
+
+## 📚 References
+
+### Classic Network Architectures
+
+1. **LeNet-5**:  
+   LeCun Y, Bottou L, Bengio Y, et al. **Gradient-based learning applied to document recognition[J].** Proceedings of the IEEE, 2002, 86(11): 2278-2324.
+
+2. **AlexNet**:  
+   Krizhevsky A, Sutskever I, Hinton G E. **Imagenet classification with deep convolutional neural networks[J].** Advances in neural information processing systems, 2012, 25.
+
+3. **VGG**:  
+   Simonyan K, Zisserman A. **Very deep convolutional networks for large-scale image recognition[J].** arXiv preprint arXiv:1409.1556, 2014.
+
+### Datasets
+
+1. **MNIST**:  
+   LeCun Y, Cortes C, Burges C. **MNIST handwritten digit database**[DB/OL]. (2010)[2023-06-10]. http://yann.lecun.com/exdb/mnist/.
+
+2. **CIFAR-10**:  
+   Krizhevsky A, Hinton G. **Learning multiple layers of features from tiny images**[R]. Toronto: University of Toronto, 2009.
+
+3. **ImageNet**:  
+   Deng J, Dong W, Socher R, et al. **ImageNet: A large-scale hierarchical image database**[C]//2009 IEEE Conference on Computer Vision and Pattern Recognition. Miami: IEEE, 2009: 248-255.
+
+4. **Fashion-MNIST**:  
+   Xiao H, Rasul K, Vollgraf R. **Fashion-MNIST: a novel image dataset for benchmarking machine learning algorithms**[J/OL]. arXiv preprint arXiv:1708.07747, 2017.
+
+5. **TinyImageNet**:  
+   Fei-Fei L, Johnson J, Yeung S. **Tiny ImageNet Visual Recognition Challenge**[DB/OL]. Stanford CS231N Course, (2017)[2023-06-10]. http://cs231n.stanford.edu/tiny-imagenet-200.zip.
+
+### Deep Learning Foundations
+
+1. LeCun Y, Bengio Y, Hinton G. **Deep learning[J].** nature, 2015, 521(7553): 436-444.
+
+2. Bishop C M, Nasrabadi N M. **Pattern recognition and machine learning[M].** New York: springer, 2006.
+
 ---
 
 ## 🛠️ Getting Started
