@@ -35,12 +35,12 @@ deeplearning-research-hub/
 
 ## 🧩 Supported Models & Datasets
 
-| Model   | Dataset | Status | Predict | 适配性 |
+| Model   | Dataset | Status | Predict | Compatibitity |
 | ------- | ------- | ------ | ------- | ------ |
-| LeNet-5 | MNIST   | ✅ Done | ✅ Done | ⭐⭐⭐ 良好 |
-| LeNet-5 | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐⭐ 良好 |
-| AlexNet | MNIST   | ✅ Done | ✅ Done | ⭐ 过度设计 |
-| AlexNet | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐ 一般 |
+| LeNet-5 | MNIST   | ✅ Done | ✅ Done | ⭐⭐⭐ Excellent |
+| LeNet-5 | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐⭐ Excellent |
+| AlexNet | MNIST   | ✅ Done | ✅ Done | ⭐ Overdesigned |
+| AlexNet | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐ Adequate |
 
 > ✅ More coming soon: ResNet, CIFAR10...
 
@@ -51,7 +51,7 @@ deeplearning-research-hub/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/deeplearning-research-hub.git
+git clone https://github.com/zhifengmuxue/deeplearning-research-hub.git
 cd deeplearning-research-hub
 ```
 
