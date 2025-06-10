@@ -51,15 +51,13 @@ deeplearning-research-hub/
 
 ### 📊 Paper Original Datasets
 
-| Model   | Dataset  | Status | Notes |
-| ------- | ------- | ------ | ----- |
-| LeNet-5 | MNIST    | ✅ Done | 论文原始使用的手写数字数据集 |
-| AlexNet | ILSVRC-2010(ImageNet) | 🔄 Untested | 原始ImageNet竞赛数据集 |
-| VGG  | ILSVRC-2012(ImageNet) | 🚧 In Progress | 论文中表现最佳的VGG变体 |
-| VGG | PASCAL VOC 2007 | 🚧 In Progress | 论文中用于目标检测的基准数据集，包含20个类别 |
-| VGG | PASCAL VOC 2012 | 🚧 In Progress | VOC挑战赛的扩展版本，样本数量更多，标注更精确 |
-| VGG | Caltech-101 | 🚧 In Progress | 早期图像分类数据集，包含101个类别，每类约40-800张图像 |
-| VGG | Caltech-256  | 🚧 In Progress | Caltech-101的扩展版本，包含256个类别，每类至少80张图像 |
+| Model | Dataset | Status |
+| ----- | ------- | ------ |
+| LeNet-5 | MNIST | ✅ Done |
+| AlexNet | ImageNet (ILSVRC-2010) | 🔄 Untested |
+| VGG | ImageNet (ILSVRC-2012) | 🚧 In Progress |
+| VGG | PASCAL VOC (2007/2012) | 🚧 In Progress |
+| VGG | Caltech (101/256) | 🚧 In Progress |
 
 
 
@@ -67,16 +65,18 @@ deeplearning-research-hub/
 
 ### 🔬 Additional Test Datasets
 
-| Model   | Dataset | Compatibility | Status | Purpose |
-| ------- | ------- | ------------ | ------ | ------- |
-| LeNet-5 | FashionMNIST | ⭐⭐⭐ Excellent | ✅ Done | 测试模型在类似结构但不同内容数据上的表现 |
-| AlexNet | MNIST    | ⭐ Overdesigned | ✅ Done | 验证复杂模型在简单任务上的过拟合情况 |
-| AlexNet | FashionMNIST | ⭐⭐ Adequate | ✅ Done | 测试深度模型在简单灰度图像上的适应性 |
-| AlexNet | CIFAR10 | ⭐⭐⭐ Excellent | ✅ Done | 评估在小型彩色图像数据集上的表现 |
-| AlexNet | TinyImageNet | ⭐⭐⭐ Excellent | ✅ Done | ImageNet的简化版本，减少类别和图像数量 |
-| VGG-A   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested | 测试最简单的VGG变体在小型数据集上的性能 |
-| VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested | 评估额外卷积层对性能的影响 |
-| VGG-D   | CIFAR10 | ⭐ Overdesigned | 🔄 Untested | 测试深层VGG在小型数据集上的过拟合情况 |
+### 🔬 Additional Test Datasets
+
+| Model   | Dataset | Compatibility | Status |
+| ------- | ------- | ------------ | ------ |
+| LeNet-5 | FashionMNIST | ⭐⭐⭐ Excellent | ✅ Done |
+| AlexNet | MNIST    | ⭐ Overdesigned | ✅ Done |
+| AlexNet | FashionMNIST | ⭐⭐ Adequate | ✅ Done |
+| AlexNet | CIFAR10 | ⭐⭐⭐ Excellent | ✅ Done |
+| AlexNet | TinyImageNet | ⭐⭐⭐ Excellent | ✅ Done |
+| VGG-A   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
+| VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
+| VGG-D(VGG16)  | CIFAR10 | ⭐ Overdesigned | 🔄 Untested |
 
 ---
 
