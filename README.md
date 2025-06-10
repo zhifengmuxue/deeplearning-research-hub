@@ -33,8 +33,6 @@ deeplearning-research-hub/
 
 ## 🧩 Supported Models & Datasets
 
-## 🧩 Supported Models & Datasets
-
 | Model   | Dataset | Status | Predict | Compatibitity |
 | ------- | ------- | ------ | ------- | ------ |
 | LeNet-5 | MNIST   | ✅ Done | ✅ Done | ⭐⭐⭐ Excellent |

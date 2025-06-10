@@ -5,6 +5,7 @@ from torchinfo import summary as torchinfo_summary
 # LeNet-5 architecture
 # Reference: https://en.wikipedia.org/wiki/LeNet
 # paper: https://ieeexplore.ieee.org/document/726791
+# 运行本脚本可以看模型结构和参数数量
 
 class LeNet5(nn.Module):
     def __init__(self, input_shape=(1, 32, 32), num_classes=10):
