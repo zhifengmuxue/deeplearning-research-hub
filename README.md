@@ -33,14 +33,16 @@ deeplearning-research-hub/
 
 ## 🧩 Supported Models & Datasets
 
-| Model   | Dataset | Status | Predict|
-| ------- | ------- | ------ | ------ |
-| LeNet-5 | MNIST   | ✅ Done | ✅ Done |
-| LeNet-5 | FashionMNIST   | ✅ Done | ✅ Done |
-| AlexNet | MNIST   | ✅ Done | ✅ Done |
-| AlexNet | FashionMNIST   | ✅ Done | ✅ Done |
+## 🧩 Supported Models & Datasets
 
-> ✅ More coming soon: ResNet, CIFAR10, FashionMNIST...
+| Model   | Dataset | Status | Predict | 适配性 |
+| ------- | ------- | ------ | ------- | ------ |
+| LeNet-5 | MNIST   | ✅ Done | ✅ Done | ⭐⭐⭐ 良好 |
+| LeNet-5 | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐⭐ 良好 |
+| AlexNet | MNIST   | ✅ Done | ✅ Done | ⭐ 过度设计 |
+| AlexNet | FashionMNIST | ✅ Done | ✅ Done | ⭐⭐ 一般 |
+
+> ✅ More coming soon: ResNet, CIFAR10...
 
 ---
 
