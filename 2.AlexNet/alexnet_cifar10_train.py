@@ -8,10 +8,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from tools.train_utils import run_training
 
-# AlexNet 不适合 MNIST 数据集，因为它的输入尺寸较大且通道数为 3。
-# 这里用 transforms 将 MNIST 图像转换为 3 通道，并调整大小到 224x224。
-# 这种转换虽然不是最佳实践，但可以让 AlexNet 在 MNIST 上运行。
-# 实际应用中，建议使用更适合 MNIST 的模型，如 LeNet-5。
+# 运行 AlexNet 在 CIFAR-10 上的训练脚本
+# 注意：CIFAR-10 图像较小(32×32)，AlexNet 可能不是最佳选择，但可以用于实验。
+# 运行后会在 "AlexNet/outputs" 目录下生成训练结果和权重文件。
+# 你可以根据需要调整 batch_size 和 num_epochs。
 def get_dataloaders(dataset_name, batch_size=64):
     # AlexNet 需要较大的输入图像尺寸
     transform = transforms.Compose([
@@ -20,9 +20,9 @@ def get_dataloaders(dataset_name, batch_size=64):
         transforms.ToTensor()
     ])
 
-    if dataset_name.lower() == "mnist":
-        train_set = datasets.MNIST(root="./dataset", train=True, download=True, transform=transform)
-        test_set = datasets.MNIST(root="./dataset", train=False, download=True, transform=transform)
+    if dataset_name.lower() == "cifar10":
+        train_set = datasets.CIFAR10(root="./dataset", train=True, download=True, transform=transform)
+        test_set = datasets.CIFAR10(root="./dataset", train=False, download=True, transform=transform)
     else:
         raise ValueError(f"Unsupported dataset: {dataset_name}")
 
@@ -33,9 +33,9 @@ def get_dataloaders(dataset_name, batch_size=64):
 run_training(
     model_class=AlexNet,
     get_dataloaders_fn=get_dataloaders,
-    dataset_name="MNIST",
+    dataset_name="CIFAR10",
     input_shape=(3, 224, 224),
-    num_epochs=1,
+    num_epochs=5,
     batch_size=64,
     output_dir="2.AlexNet/outputs",
     enable_plot=True,

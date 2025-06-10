@@ -36,6 +36,7 @@ run_training(
     dataset_name="FashionMNIST",
     input_shape=(3, 224, 224),
     num_epochs=1,    # 训练十分慢，这里就调了训练一次
-    output_dir="AlexNet/outputs",
+    batch_size=64,
+    output_dir="2.AlexNet/outputs",
     enable_plot=True,
 )

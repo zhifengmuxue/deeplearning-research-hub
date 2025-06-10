@@ -30,6 +30,6 @@ run_training(
     dataset_name="FashionMNIST",
     input_shape=(1, 28, 28),
     num_epochs=5,
-    output_dir="LeNet/outputs",
+    output_dir="1.LeNet/outputs",
     enable_plot=True,
 )
