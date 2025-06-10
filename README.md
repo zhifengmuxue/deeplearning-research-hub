@@ -42,6 +42,7 @@ deeplearning-research-hub/
 | AlexNet | CIFAR10 |  ⭐⭐⭐ Excellent | ❌ No | ✅ Done |
 | AlexNet | ILSVRC-2010 | ⭐⭐⭐ Excellent | ✅ Yes | 🚧 Planned |
 | AlexNet | ImageNet | ⭐⭐⭐ Excellent | ✅ Yes | 🚧 Planned |
+| AlexNet | TinyImageNet | ⭐⭐⭐ Excellent | ❌ No | ✅ Done |
 
 > ✅ More coming soon: GoogleNet, ResNet, CIFAR10...
 
