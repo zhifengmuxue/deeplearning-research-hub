@@ -55,10 +55,9 @@ deeplearning-research-hub/
 | ------- | ------- | ------------ | ------ | ----- |
 | LeNet-5 | MNIST   | ⭐⭐⭐ Excellent | ✅ Done | 论文原始使用的手写数字数据集 |
 | AlexNet | ILSVRC-2010 | ⭐⭐⭐ Excellent | 🚧 Planned | 原始ImageNet竞赛数据集 |
-| AlexNet | ImageNet | ⭐⭐⭐ Excellent | 🚧 Planned | 完整ImageNet数据集 |
+| AlexNet | ImageNet | ⭐⭐⭐ Excellent | 🔄 Untested | 完整ImageNet数据集 |
 | VGG-16  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中表现最佳的VGG变体 |
 | VGG-19  | ILSVRC-2012 | ⭐⭐⭐ Excellent | 🚧 In Progress | 论文中最深的VGG变体 |
-
 
 ### 🔬 Additional Test Datasets
 
@@ -69,13 +68,12 @@ deeplearning-research-hub/
 | AlexNet | FashionMNIST | ⭐⭐ Adequate | ✅ Done | 测试深度模型在简单灰度图像上的适应性 |
 | AlexNet | CIFAR10 | ⭐⭐⭐ Excellent | ✅ Done | 评估在小型彩色图像数据集上的表现 |
 | AlexNet | TinyImageNet | ⭐⭐⭐ Excellent | ✅ Done | ImageNet的简化版本，减少类别和图像数量 |
-| VGG-A   | CIFAR10 | ⭐⭐ Adequate | 🚧 In Progress | 测试最简单的VGG变体在小型数据集上的性能 |
-| VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🚧 In Progress | 评估额外卷积层对性能的影响 |
-| VGG-D   | CIFAR10 | ⭐ Overdesigned | 🚧 In Progress | 测试深层VGG在小型数据集上的过拟合情况 |
-
-> ✅ More coming soon: GoogleNet, ResNet, CIFAR10...
+| VGG-A   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested | 测试最简单的VGG变体在小型数据集上的性能 |
+| VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested | 评估额外卷积层对性能的影响 |
+| VGG-D   | CIFAR10 | ⭐ Overdesigned | 🔄 Untested | 测试深层VGG在小型数据集上的过拟合情况 |
 
 
+ps: Some datasets are too large to test on my own computer...
 ---
 
 ## 🛠️ Getting Started
