@@ -74,8 +74,6 @@ deeplearning-research-hub/
 | VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested | 评估额外卷积层对性能的影响 |
 | VGG-D   | CIFAR10 | ⭐ Overdesigned | 🔄 Untested | 测试深层VGG在小型数据集上的过拟合情况 |
 
-
-ps: Some datasets are too large to test on my own computer...
 ---
 
 ## 📚 References
