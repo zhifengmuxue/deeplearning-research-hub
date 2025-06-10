@@ -86,7 +86,7 @@ You can create new scripts like this:
 ```python
 # custom_train.py
 from tools.train_utils import run_training
-from LeNet.lenet5 import LeNet5
+from LeNet import LeNet5
 from tools.datasets import get_mnist_dataloaders  # or your own dataset function
 
 run_training(
