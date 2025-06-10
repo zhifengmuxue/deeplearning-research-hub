@@ -11,8 +11,11 @@ deeplearning-research-hub/
 │   ├── lenet5_minist_train.py
 |   ├── lenet5_minist_predict.py
 |   └── ... other dataset
+|
 ├── ... other network
+|
 ├── tools/                    # Generic training & evaluation utilities
+|   ├── predict_utils.py
 │   └── train_utils.py
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # You're reading this!
@@ -31,6 +34,19 @@ deeplearning-research-hub/
 
 ---
 
+## 🏗️ Implemented Network Architectures
+
+| Network Architecture | Year | Original Purpose | Implementation Status | Notes |
+| ------------------- | ---- | ---------------- | -------------------- | ----- |
+| LeNet-5 | 1998 | Handwritten digit recognition | ✅ Complete | 经典CNN架构，为现代卷积网络奠定基础 |
+| AlexNet | 2012 | ImageNet classification | ✅ Complete | 首个深度CNN赢得ImageNet竞赛，引发深度学习革命 |
+| VGG (A/B/C/D/E) | 2014 | ImageNet classification | 🚧 In Progress | 以简洁的架构和3x3卷积堆叠著称 |
+| GoogleNet/Inception | 2014 | ImageNet classification | ❌ Planned | 引入inception模块，减少参数量 |
+| ResNet | 2015 | ImageNet classification | ❌ Planned | 解决深层网络的梯度消失问题，引入残差连接 |
+| MobileNet | 2017 | Mobile vision applications | ❌ Planned | 轻量级网络，适用于移动设备 |
+| EfficientNet | 2019 | Efficient scaling | ❌ Planned | 通过复合缩放方法平衡网络宽度、深度和分辨率 |
+
+---
 ## 🧩 Supported Models & Datasets
 
 | Model   | Dataset | Compatibility | Original Paper Dataset | Status |

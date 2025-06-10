@@ -4,7 +4,7 @@ from torchinfo import summary as torchinfo_summary
 
 # AlexNet architecture
 # Reference: https://en.wikipedia.org/wiki/AlexNet
-# paper: 《ImageNet Classification with Deep Convolutional Neural Networks》
+# paper: ImageNet Classification with Deep Convolutional Neural Networks
 # 运行本脚本可以看模型结构和参数数量
 
 class AlexNet(nn.Module):
