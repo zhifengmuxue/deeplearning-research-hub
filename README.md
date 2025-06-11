@@ -36,15 +36,20 @@ deeplearning-research-hub/
 
 ## 🏗️ Implemented Network Architectures
 
-| Network Architecture | Year | Original Purpose | Implementation Status | Notes |
-| ------------------- | ---- | ---------------- | -------------------- | ----- |
-| LeNet-5 | 1998 | Handwritten digit recognition | ✅ Complete | 经典CNN架构，为现代卷积网络奠定基础 |
-| AlexNet | 2012 | ImageNet classification | ✅ Complete | 首个深度CNN赢得ImageNet竞赛，引发深度学习革命 |
-| VGG (A/B/C/D/E) | 2014 | ImageNet classification | ✅ Complete | 以简洁的架构和3x3卷积堆叠著称 |
-| GoogleNet/Inception | 2014 | ImageNet classification | ❌ Planned | 引入inception模块，减少参数量 |
-| ResNet | 2015 | ImageNet classification | ❌ Planned | 解决深层网络的梯度消失问题，引入残差连接 |
-| MobileNet | 2017 | Mobile vision applications | ❌ Planned | 轻量级网络，适用于移动设备 |
-| EfficientNet | 2019 | Efficient scaling | ❌ Planned | 通过复合缩放方法平衡网络宽度、深度和分辨率 |
+| Network Architecture | Year | Original Purpose | Implementation Status |
+| ------------------- | ---- | ---------------- | -------------------- |
+| LeNet-5 | 1998 | Handwritten digit recognition | ✅ Complete |
+| AlexNet | 2012 | ImageNet classification | ✅ Complete |
+| Maxout Networks | 2013 | General classification | ✅ Complete |
+| NIN (Network in Network) | 2013 | General classification | ✅ Complete |
+| VGG (A/B/C/D/E) | 2014 | ImageNet classification | ✅ Complete |
+| GoogLeNet (Inception-v1) | 2014 | ImageNet classification | ❌ Planned |
+| Inception-v2 | 2015 | ImageNet classification | ❌ Planned |
+| Inception-v3 | 2015 | ImageNet classification | ❌ Planned |
+| Inception-v4 | 2016 | ImageNet classification | ❌ Planned |
+| ResNet | 2015 | ImageNet classification | ❌ Planned |
+| MobileNet | 2017 | Mobile vision applications | ❌ Planned |
+| EfficientNet | 2019 | Efficient scaling | ❌ Planned |
 
 ---
 ## 🧩 Supported Models & Datasets
@@ -65,8 +70,6 @@ deeplearning-research-hub/
 
 ### 🔬 Additional Test Datasets
 
-### 🔬 Additional Test Datasets
-
 | Model   | Dataset | Compatibility | Status |
 | ------- | ------- | ------------ | ------ |
 | LeNet-5 | FashionMNIST | ⭐⭐⭐ Excellent | ✅ Done |
@@ -79,42 +82,21 @@ deeplearning-research-hub/
 | VGG-D(VGG16)  | CIFAR10 | ⭐ Overdesigned | 🔄 Untested |
 
 ---
-
 ## 📚 References
 
 ### Classic Network Architectures
-
-1. **LeNet-5**:  
-   LeCun Y, Bottou L, Bengio Y, et al. **Gradient-based learning applied to document recognition[J].** Proceedings of the IEEE, 2002, 86(11): 2278-2324.
-
-2. **AlexNet**:  
-   Krizhevsky A, Sutskever I, Hinton G E. **Imagenet classification with deep convolutional neural networks[J].** Advances in neural information processing systems, 2012, 25.
-
-3. **VGG**:  
-   Simonyan K, Zisserman A. **Very deep convolutional networks for large-scale image recognition[J].** arXiv preprint arXiv:1409.1556, 2014.
+- [LeNet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) (LeCun et al., 1998)
+- [AlexNet](https://papers.nips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) (Krizhevsky et al., 2012)
+- [VGG](https://arxiv.org/pdf/1409.1556.pdf) (Simonyan & Zisserman, 2014)
+- [Inception/GoogleNet](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf) (Szegedy et al., 2015)
 
 ### Datasets
+- [MNIST](http://yann.lecun.com/exdb/mnist/) (LeCun et al., 2010)
+- [CIFAR-10](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) (Krizhevsky & Hinton, 2009)
+- [ImageNet](https://image-net.org/static_files/papers/imagenet_cvpr09.pdf) (Deng et al., 2009)
 
-1. **MNIST**:  
-   LeCun Y, Cortes C, Burges C. **MNIST handwritten digit database**[DB/OL]. (2010)[2023-06-10]. http://yann.lecun.com/exdb/mnist/.
-
-2. **CIFAR-10**:  
-   Krizhevsky A, Hinton G. **Learning multiple layers of features from tiny images**[R]. Toronto: University of Toronto, 2009.
-
-3. **ImageNet**:  
-   Deng J, Dong W, Socher R, et al. **ImageNet: A large-scale hierarchical image database**[C]//2009 IEEE Conference on Computer Vision and Pattern Recognition. Miami: IEEE, 2009: 248-255.
-
-4. **Fashion-MNIST**:  
-   Xiao H, Rasul K, Vollgraf R. **Fashion-MNIST: a novel image dataset for benchmarking machine learning algorithms**[J/OL]. arXiv preprint arXiv:1708.07747, 2017.
-
-5. **TinyImageNet**:  
-   Fei-Fei L, Johnson J, Yeung S. **Tiny ImageNet Visual Recognition Challenge**[DB/OL]. Stanford CS231N Course, (2017)[2023-06-10]. http://cs231n.stanford.edu/tiny-imagenet-200.zip.
-
-### Deep Learning Foundations
-
-1. LeCun Y, Bengio Y, Hinton G. **Deep learning[J].** nature, 2015, 521(7553): 436-444.
-
-2. Bishop C M, Nasrabadi N M. **Pattern recognition and machine learning[M].** New York: springer, 2006.
+### more
+See [full references list](docs/references.md) for more details.
 
 ---
 
