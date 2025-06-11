@@ -57,5 +57,5 @@ class LeNet5(nn.Module):
     
 if __name__ == "__main__":
     model = LeNet5(input_shape=(1, 32, 32))
-    print(model.summary())
+    model.summary()
 

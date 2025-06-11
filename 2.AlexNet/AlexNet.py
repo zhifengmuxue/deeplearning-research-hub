@@ -71,4 +71,4 @@ class AlexNet(nn.Module):
     
 if __name__ == "__main__":
     model = AlexNet(input_shape=(3, 224, 224))
-    print(model.summary())
+    model.summary()

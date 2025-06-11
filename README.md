@@ -65,7 +65,6 @@ deeplearning-research-hub/
 | VGG | Caltech (101/256) | 🚧 In Progress |
 
 
-
 *Note: ILSVRC (ImageNet Large Scale Visual Recognition Challenge) is an annual competition that uses a subset of the full ImageNet database. Different years (ILSVRC-2010, ILSVRC-2012, etc.) may use slightly different configurations of the dataset.
 
 ### 🔬 Additional Test Datasets
