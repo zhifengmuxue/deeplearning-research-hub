@@ -29,11 +29,11 @@ def get_dataloaders(dataset_name, batch_size=64):
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
     return train_loader, test_loader
 
+model = AlexNet(input_shape=(3, 224, 224), num_classes=1000)  # ImageNet 有 1000 个类别
 run_training(
-    model_class=AlexNet,
+    model,
     get_dataloaders_fn=get_dataloaders,
     dataset_name="ImageNet", 
-    input_shape=(3, 224, 224),
     num_epochs=1,    # 训练十分慢，这里就调了训练一次
     batch_size=64,
     output_dir="2.AlexNet/outputs",

@@ -78,12 +78,11 @@ def plot_metrics(losses, accuracies, output_dir):
     plt.show()
 
 def run_training(
-    model_class,
+    model,  
     get_dataloaders_fn,
-    dataset_name="MNIST",
-    input_shape=(1, 32, 32),
-    lr=0.001,
+    dataset_name,
     batch_size=64,
+    lr=0.001,
     num_epochs=5,
     output_dir="outputs",
     optimize_method=torch.optim.Adam,
@@ -101,11 +100,10 @@ def run_training(
 
     print(f"Using device: {device}")
 
-    model = model_class(input_shape=input_shape).to(device)
+    model = model.to(device)
     train_loader, test_loader = get_dataloaders_fn(dataset_name, batch_size)
-    
-    criterion_instance = criterion()
 
+    criterion_instance = criterion()
     try:
         criterion_instance = criterion_instance.to(device)
     except:
@@ -129,5 +127,5 @@ def run_training(
         plot_metrics(losses, accuracies, output_dir=os.path.join(output_dir, "visuals"))
 
     os.makedirs(os.path.join(output_dir, "weights"), exist_ok=True)
-    torch.save(model.state_dict(), os.path.join(output_dir, "weights", f"{model_class.__name__}_{dataset_name}.pth"))
+    torch.save(model.state_dict(), os.path.join(output_dir, "weights", f"{type(model).__name__}_{dataset_name}.pth"))
     print("Model saved.")

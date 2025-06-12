@@ -30,11 +30,11 @@ def get_dataloaders(dataset_name, batch_size=64):
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
     return train_loader, test_loader
 
+model = AlexNet(input_shape=(3, 224, 224), num_classes=10)
 run_training(
-    model_class=AlexNet,
+    model,
     get_dataloaders_fn=get_dataloaders,
     dataset_name="CIFAR10",
-    input_shape=(3, 224, 224),
     num_epochs=5,
     batch_size=64,
     output_dir="2.AlexNet/outputs",

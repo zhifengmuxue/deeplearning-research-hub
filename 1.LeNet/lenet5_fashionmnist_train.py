@@ -24,11 +24,11 @@ def get_dataloaders(dataset_name, batch_size=64):
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
     return train_loader, test_loader
 
+model = LeNet5(input_shape=(1, 28, 28), num_classes=10)
 run_training(
-    model_class=LeNet5,
+    model,
     get_dataloaders_fn=get_dataloaders,
     dataset_name="FashionMNIST",
-    input_shape=(1, 28, 28),
     num_epochs=5,
     output_dir="1.LeNet/outputs",
     enable_plot=True,

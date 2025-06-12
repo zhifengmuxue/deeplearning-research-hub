@@ -1,6 +1,6 @@
 from torchvision import transforms, datasets
 import matplotlib.pyplot as plt
-from GoogLeNet import GoogLeNetV1
+from GoogLeNet import GoogLeNet
 import sys
 import os
 import random
@@ -34,7 +34,7 @@ plt.axis("off")
 plt.show()
 
 # 初始化模型
-model = GoogLeNetV1(input_shape=(1, 28, 28))
+model = GoogLeNet(input_shape=(1, 28, 28))
 
 # 权重路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
