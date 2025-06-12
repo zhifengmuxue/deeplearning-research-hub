@@ -43,11 +43,11 @@ deeplearning-research-hub/
 | Maxout Networks | 2013 | General classification | ✅ Complete |
 | NIN (Network in Network) | 2013 | General classification | ✅ Complete |
 | VGG (A/B/C/D/E) | 2014 | ImageNet classification | ✅ Complete |
-| GoogLeNet (Inception-v1) | 2014 | ImageNet classification | ❌ Planned |
+| GoogLeNet (Inception-v1) | 2014 | ImageNet classification | ✅ Complete |
 | Inception-v2 | 2015 | ImageNet classification | ❌ Planned |
 | Inception-v3 | 2015 | ImageNet classification | ❌ Planned |
-| Inception-v4 | 2016 | ImageNet classification | ❌ Planned |
 | ResNet | 2015 | ImageNet classification | ❌ Planned |
+| Inception-v4 | 2016 | ImageNet classification | ❌ Planned |
 | MobileNet | 2017 | Mobile vision applications | ❌ Planned |
 | EfficientNet | 2019 | Efficient scaling | ❌ Planned |
 

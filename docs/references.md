@@ -14,6 +14,13 @@
 4. **Maxout Networks**
    Goodfellow I, Warde-Farley D, Mirza M, et al. **Maxout networks[C]**//International conference on machine learning. PMLR, 2013: 1319-1327.
 
+5. **Network in network**
+   Lin M, Chen Q, Yan S. **Network in network[J].** arXiv preprint arXiv:1312.4400, 2013.
+
+6. **GoogLeNet**
+   Szegedy C, Liu W, Jia Y, et al. **Going deeper with convolutions[C]**//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 1-9.
+
+   
 ### Datasets
 
 1. **MNIST**:  
