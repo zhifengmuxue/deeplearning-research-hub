@@ -44,8 +44,8 @@ deeplearning-research-hub/
 | NIN (Network in Network) | 2013 | General classification | ✅ Complete |
 | VGG (A/B/C/D/E) | 2014 | ImageNet classification | ✅ Complete |
 | GoogLeNet (Inception-v1) | 2014 | ImageNet classification | ✅ Complete |
-| Inception-v2 | 2015 | ImageNet classification | ❌ Planned |
-| Inception-v3 | 2015 | ImageNet classification | ❌ Planned |
+| Inception-v2 | 2015 | ImageNet classification | ✅ Complete |
+| Inception-v3 | 2015 | ImageNet classification | ✅ Complete |
 | ResNet | 2015 | ImageNet classification | ❌ Planned |
 | Inception-v4 | 2016 | ImageNet classification | ❌ Planned |
 | MobileNet | 2017 | Mobile vision applications | ❌ Planned |
@@ -63,6 +63,9 @@ deeplearning-research-hub/
 | VGG | ImageNet (ILSVRC-2012) | 🚧 In Progress |
 | VGG | PASCAL VOC (2007/2012) | 🚧 In Progress |
 | VGG | Caltech (101/256) | 🚧 In Progress |
+| GoogLeNet | ImageNet (ILSVRC-2012) | 🚧 In Progress |
+| InceptionV3 | ImageNet (ILSVRC-2012) | 🚧 In Progress |
+
 
 
 *Note: ILSVRC (ImageNet Large Scale Visual Recognition Challenge) is an annual competition that uses a subset of the full ImageNet database. Different years (ILSVRC-2010, ILSVRC-2012, etc.) may use slightly different configurations of the dataset.
@@ -76,9 +79,10 @@ deeplearning-research-hub/
 | AlexNet | FashionMNIST | ⭐⭐ Adequate | ✅ Done |
 | AlexNet | CIFAR10 | ⭐⭐⭐ Excellent | ✅ Done |
 | AlexNet | TinyImageNet | ⭐⭐⭐ Excellent | ✅ Done |
-| VGG-A   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
-| VGG-B   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
-| VGG-D(VGG16)  | CIFAR10 | ⭐ Overdesigned | 🔄 Untested |
+| VGG-A/B/D   | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
+| GoogLeNet(InceptionV1) | MNIST | ⭐ Overdesigned | ✅ Done |
+| GoogLeNet(InceptionV2) | MNIST | ⭐ Overdesigned | ✅ Done |
+| InceptionV3 | CIFAR10 | ⭐⭐ Adequate | 🔄 Untested |
 
 ---
 ## 📚 References
