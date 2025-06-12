@@ -11,19 +11,19 @@
 3. **VGG**:  
    Simonyan K, Zisserman A. **Very deep convolutional networks for large-scale image recognition[J].** arXiv preprint arXiv:1409.1556, 2014.
 
-4. **Maxout Networks**
+4. **Maxout Networks**:    
    Goodfellow I, Warde-Farley D, Mirza M, et al. **Maxout networks[C]**//International conference on machine learning. PMLR, 2013: 1319-1327.
 
-5. **Network in network**
+5. **Network in network**:     
    Lin M, Chen Q, Yan S. **Network in network[J].** arXiv preprint arXiv:1312.4400, 2013.
 
-6. **GoogLeNet （InceptionV1）**
+6. **GoogLeNet （InceptionV1）**:      
    Szegedy C, Liu W, Jia Y, et al. **Going deeper with convolutions[C]**//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 1-9.
 
-7. **Batch Normalization** 
+7. **Batch Normalization**:       
    Ioffe S, Szegedy C. Batch normalization: Accelerating deep network training by reducing internal covariate shift[C]//International conference on machine learning. pmlr, 2015: 448-456.
 
-8. **InceptionV3**
+8. **InceptionV3**:     
    Szegedy C, Vanhoucke V, Ioffe S, et al. Rethinking the inception architecture for computer vision[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2016: 2818-2826.
 
 ### Datasets
